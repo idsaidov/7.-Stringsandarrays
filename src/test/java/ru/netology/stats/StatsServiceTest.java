@@ -5,13 +5,13 @@ import org.junit.jupiter.api.Test;
 
 class StatsServiceTest {
 
-    long[] sales = {10, 20, 30, 13, 1, 3, 5};
+    long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
     @Test
     void shouldFindMaxSalesMonth() {
         StatsService service = new StatsService();
 
-        long expected = 3;
+        long expected = 8;
         long actual = service.maxSales(sales);
         Assertions.assertEquals(expected, actual);
     }
@@ -20,7 +20,7 @@ class StatsServiceTest {
     void shouldFindMinSalesMonth() {
         StatsService service = new StatsService();
 
-        long expected = 5;
+        long expected = 9;
         long actual = service.minSales(sales);
         Assertions.assertEquals(expected, actual);
     }
