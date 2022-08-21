@@ -7,7 +7,7 @@ class StatsServiceTest {
 
     long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
     @Test
-    void shouldFindMaxSalesMonth() {
+    void shouldWasThePeakSales() {
         StatsService service = new StatsService();
 
         long expected = 8;
@@ -16,7 +16,7 @@ class StatsServiceTest {
     }
 
     @Test
-    void shouldFindMinSalesMonth() {
+    void shouldWasTheMinSales() {
         StatsService service = new StatsService();
 
         long expected = 9;
@@ -25,7 +25,7 @@ class StatsServiceTest {
     }
 
     @Test
-    void shouldCalculateSumAllSales() {
+    void shouldSumAllSales() {
         StatsService service = new StatsService();
 
         long expected = 180;
@@ -34,7 +34,7 @@ class StatsServiceTest {
     }
 
     @Test
-    void shouldCalculateAverageSales() {
+    void shouldAverageAmountSalesInMonth() {
         StatsService service = new StatsService();
 
         long expected = 15;
@@ -42,7 +42,7 @@ class StatsServiceTest {
         Assertions.assertEquals(expected, actual);
     }
     @Test
-    void shouldCountSalesBelowAvgMonths() {
+    void shouldSalesWereBelowAverage() {
         StatsService service = new StatsService();
 
         long expected = 5;
@@ -51,7 +51,7 @@ class StatsServiceTest {
     }
 
     @Test
-    void shouldCountSalesAboveAvgMonths() {
+    void shouldSalesWereAboveAverage() {
         StatsService service = new StatsService();
 
         long expected = 5;
